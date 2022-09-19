@@ -1,0 +1,36 @@
+:root {
+  --btncp: #2f2e41;
+  --btncs: #3f3d56;
+}
+.A__Login {
+  min-height: 100vh;
+  width: 100%;
+  .background-custom {
+    background: #bc4e9c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #f80759,
+      #bc4e9c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #f80759,
+      #bc4e9c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    h1 {
+      font-weight: 700;
+      color: white;
+    }
+    p {
+      font-weight: 500;
+      color: white;
+    }
+    img {
+      width: 60%;
+    }
+  }
+}

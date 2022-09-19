@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.gap {
+  margin: 1rem 0rem;
+}
+.row,
+.col {
+  margin: 0;
+  padding: 0;
+}
+.pageContent {
+  padding: 6rem 2rem 2rem 2rem;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiDialog-paper {
+  width: 100%;
+}
+
+.specialInputs {
+  input,
+  select {
+    border-radius: 0px;
+  }
+}
+
+/* Input */
+/* Button */
+/* Custom Button */
+/* .Button-Custom-1.purple:hover {
+  background: #8a3ffc !important;
+  border: 1px solid #8a3ffc !important;
+  color: rgb(255, 255, 255) !important;
+  transition: 500ms !important;
+} */
+
+:root {
+  --BGC: #fde7f9;
+  --BGI: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
+  --PC: #f80759;
+  --TPC: #121212;
+  --W: rgba(255, 255, 255, 0.7);
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+.custom-input {
+  .input-group-text {
+    background-color: #eee;
+    border: none;
+    transition: 300ms;
+    border-bottom: 2px solid #eee;
+  }
+  .form-control {
+    transition: 300ms;
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    border-bottom: 2px solid #eee;
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  .form-control.focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    .input-group-text {
+      background-color: #eeeeee7d;
+      transition: 300ms;
+      border-bottom: 2px solid var(--PC);
+      color: var(--PC);
+    }
+    .form-control {
+      background-color: #eeeeee7d;
+      transition: 300ms;
+      border-bottom: 2px solid var(--PC);
+    }
+  }
+  &:focus {
+    .input-group-text {
+      background-color: #eeeeee7d;
+      transition: 300ms;
+      border-bottom: 2px solid var(--PC);
+      color: var(--PC);
+    }
+    .form-control {
+      background-color: #eeeeee7d;
+      transition: 300ms;
+      border-bottom: 2px solid var(--PC);
+    }
+  }
+}
+.custom-button {
+  button {
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid var(--PC);
+    color: var(--PC);
+    font-weight: 900;
+    font-size: 1rem;
+    background: transparent;
+  }
+  .btn-primary {
+    &:hover {
+      color: white;
+      background: var(--PC);
+      border: 2px solid var(--PC);
+      outline: none;
+      box-shadow: none;
+    }
+    &:focus {
+      color: white;
+      background: var(--PC);
+      border: 2px solid var(--PC);
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+.custom-button.fill {
+  button {
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid var(--PC);
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    background: var(--PC);
+    transition: 300ms;
+  }
+  button {
+    &:hover {
+      color: white;
+      background: transparent;
+      border: 2px solid white;
+      outline: none;
+      box-shadow: none;
+      transition: 300ms;
+    }
+    &:focus {
+      color: white;
+      background: transparent;
+      border: 2px solid white;
+      outline: none;
+      box-shadow: none;
+      transition: 300ms;
+    }
+  }
+}
+a {
+  text-decoration: none;
+}
+.custom-spin {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+.Button-Custom-1 {
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-transform: unset !important;
+  text-decoration: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  position: static;
+  text-align: start;
+  white-space: normal;
+  cursor: pointer;
+  border-radius: 0.7em !important;
+  height: 3rem !important;
+  padding: 1em 1.7em !important;
+  width: 9rem !important;
+  .type {
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+  }
+}
+.Button-Custom-1.white {
+  background: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important;
+  transition: 500ms !important;
+  &:hover {
+    background: rgb(0, 0, 0) !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
+    transition: 500ms !important;
+  }
+}
+.Button-Custom-1.purple {
+  &:hover {
+    background: #001141 !important;
+    border: 1px solid #001141 !important;
+    color: white !important;
+    transition: 500ms !important;
+  }
+  background: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+  transition: 500ms !important;
+}
+.Button-Custom-1.upload-btn {
+  background: #001141 !important;
+  border: 1px solid #001141 !important;
+  color: white !important;
+  transition: 500ms !important;
+  &:hover {
+    background: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+    transition: 500ms !important;
+  }
+}
+.Button-Custom-1.ooopen {
+  padding: 1.5rem 5rem !important;
+  width: fit-content !important;
+}
+.Button-Custom-1.black {
+  background: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
+  transition: 500ms !important;
+  &:hover {
+    background: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+    transition: 500ms !important;
+  }
+}
+.Button-Custom-1.accent-1 {
+  background: #0d6efd !important;
+  border: 1px solid #0d6efd !important;
+  color: rgb(255, 255, 255) !important;
+  transition: 500ms !important;
+  &:hover {
+    background: rgb(255, 255, 255) !important;
+    border: 1px solid white !important;
+    color: #0d6efd !important;
+    transition: 500ms !important;
+  }
+}
+.center-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 980px) {
+  .Button-Custom-1 {
+    width: unset !important;
+    height: unset !important;
+    padding: 6px 12px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-expand-lg {
+    .navbar-collapse {
+      justify-content: space-between !important;
+    }
+  }
+}
+// Navbar

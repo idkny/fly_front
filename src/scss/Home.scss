@@ -1,0 +1,28 @@
+@use "./Variables.scss" as var;
+.__Home {
+  position: relative;
+  background: linear-gradient(to bottom, #06beb55a 0%, #48b1bf4f 100%),
+    url(https://images.hdqwalls.com/download/plane-flying-over-building-4k-gj-1920x1080.jpg)
+      no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 56%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  .homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .__Home {
+  }
+}

@@ -1,0 +1,145 @@
+@use "./Variables.scss" as var;
+
+.__FlightCard {
+  max-width: 300px;
+  .card {
+    width: 100%;
+    background: var.$primary-blue;
+    padding: 5px;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    &.auction {
+      &:hover{
+        .bidButton {
+          color: var(--PC)!important;
+          transition: 300ms;
+        }
+      }
+      padding: 0;
+      margin: 0;
+      border: none;
+      outline: none;
+
+      .heart {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 38px;
+        height: 35px;
+        img {
+          width: inherit;
+          height: inherit;
+        }
+      }
+      img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .card-body {
+        background: #f8f8f8;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: 0;
+        color: #000000;
+        .row2 {
+          .bid {
+            .label {
+              color: rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+        .button {
+          justify-content: space-between;
+          .bidButton {
+            color: transparent;
+            transition: 300ms;
+          }
+          .timeLeft {
+            color: var.$primary-pink;
+            font-size: 12px;
+            word-spacing: 3px;
+            b {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+    img {
+      border-radius: 12px;
+      height: 200px;
+      width: 100%;
+    }
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      color: #ffffff;
+      .row1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        .title {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1rem;
+          text-align: start;
+          // max-width: 165px;
+          // white-space: nowrap;
+          // overflow: hidden !important;
+          // text-overflow: ellipsis;
+        }
+        .number {
+          font-weight: 700;
+          font-size: 1rem;
+          line-height: 1rem;
+        }
+      }
+
+      .row2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        .bid {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          width: 100%;
+          .label {
+            font-weight: 400;
+            font-size: 0.85rem;
+            line-height: 1rem;
+            color: rgba(255, 255, 255, 0.65);
+            margin-right: 5px;
+          }
+          .value {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1rem;
+          }
+        }
+      }
+      .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 1rem;
+        .bidButton {
+          color: var(--PC);
+          font-weight: 700;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
